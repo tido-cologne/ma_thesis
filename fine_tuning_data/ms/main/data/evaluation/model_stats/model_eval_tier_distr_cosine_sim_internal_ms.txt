@@ -1,0 +1,75 @@
+model performance after fine-tuning:
+                 0        1       2
+precision     0.90     0.74    0.78
+recall        0.88     0.77    0.77
+f1-score      0.89     0.76    0.77
+support    3200.00  2000.00  800.00
+MCC           0.71      NaN     NaN
+
+predicted tier distribution:
+0    3121
+1    2094
+2     785
+Name: pred_label, dtype: int64
+prediction distribution:
+|        |   true_0 |   true_1 |   true_2 |
+|:-------|---------:|---------:|---------:|
+| pred_0 |     2801 |      298 |       22 |
+| pred_1 |      381 |     1548 |      165 |
+| pred_2 |       18 |      154 |      613 |
+
+
+right predictions according to cosine similarity (analyzing 18 articles...):
+
+TITLE: Heparin coatings for improving blood compatibility of medical devices // SUBJ.: ['Pharmaceutical Science']
+TITLE: A case study on failure of AISI 347H stabilized stainless steel pipe in a petrochemical plant // SUBJ.: ['Safety, Risk, Reliability and Quality']
+correct predictions: 2/18
+
+
+right predictions according to cosine similarity (analyzing 154 articles...):
+
+TITLE: Non-associative limit analysis of the toppling-sliding failure of rock slopes // SUBJ.: ['Geotechnical Engineering and Engineering Geology']
+TITLE: Effects of mixed-alkali oxides on AC conductivity and dielectric properties of xNa2O-(20-x)K2O-30V2O5-50TeO2 glasses // SUBJ.: ['General Physics and Astronomy']
+TITLE: Self-assembled liquid crystalline nanotemplates and their incorporation in dye-sensitised solar cells // SUBJ.: ['General Chemical Engineering', 'Electrochemistry']
+TITLE: The effect of local reinforcing bar reductions and anchorage zone cracking on the load capacity of RC half-joints // SUBJ.: ['Civil and Structural Engineering']
+TITLE: Phosphine and diphosphine complexes of tungsten(VI) oxide tetrafluoride // SUBJ.: ['Biochemistry', 'Inorganic Chemistry', 'Organic Chemistry', 'Physical and Theoretical Chemistry', 'Environmental Chemistry']
+TITLE: Physical properties enhancement of porous silicon treated with In2O3 as a antireflective coating // SUBJ.: ['General Physics and Astronomy']
+TITLE: Structural, thermal, morphological and optical properties of PEO filled with biosynthesized Ag nanoparticles: New insights to band gap study // SUBJ.: ['General Physics and Astronomy']
+TITLE: 171 Scandium-based full Heusler compounds: A comprehensive study of competition between XA and L21 atomic ordering // SUBJ.: ['General Physics and Astronomy']
+TITLE: Trends in the design of wavelength-based optical fibre biosensors (2008–2018) // SUBJ.: ['Biophysics', 'Biotechnology', 'Electrochemistry', 'Biomedical Engineering']
+TITLE: Surface microstructuring to modify wettability for 3D printing of nano-filled inks // SUBJ.: ['General Chemical Engineering', 'General Chemistry']
+TITLE: Effects of wave directionality on extreme response for a long end-anchored floating bridge // SUBJ.: ['Ocean Engineering']
+TITLE: The use of hydrogen to separate and recycle neodymium-iron-boron-type magnets from electronic waste // SUBJ.: ['Strategy and Management', 'Renewable Energy, Sustainability and the Environment', 'Industrial and Manufacturing Engineering', 'General Environmental Science']
+TITLE: Theoretical studies on a (FGPM) system with Gaussian profile for a zero TCD SAW devices // SUBJ.: ['General Physics and Astronomy']
+TITLE: Structural modification of nanohydroxyapatite Ca10(PO4)6(OH)2 related to Eu3+ and Sr2+ ions doping and its spectroscopic and antimicrobial properties // SUBJ.: ['Biochemistry', 'Inorganic Chemistry']
+TITLE:  Recycled photocatalyst and available photodetector based on ternary Bi 6 Mo 2 O 15 sub-microcrystals  // SUBJ.: ['General Physics and Astronomy']
+TITLE: Natural and bioinspired nanostructured bactericidal surfaces // SUBJ.: ['Colloid and Surface Chemistry', 'Physical and Theoretical Chemistry', 'Surfaces and Interfaces']
+TITLE: The effects of blood conditioning films on the antimicrobial and retention properties of zirconium-nitride silver surfaces // SUBJ.: ['Biotechnology', 'Colloid and Surface Chemistry', 'Physical and Theoretical Chemistry', 'Surfaces and Interfaces']
+TITLE: Application of structural topology optimisation in aluminium cross-sectional design // SUBJ.: ['Civil and Structural Engineering', 'Mechanical Engineering', 'Building and Construction']
+TITLE: Real-time observation of fluid flows in tissue during stress relaxation using Raman spectroscopy // SUBJ.: ['Biophysics', 'Biomedical Engineering', 'Orthopedics and Sports Medicine', 'Rehabilitation']
+TITLE: A planar 3-DOF nanopositioning platform with large magnification // SUBJ.: ['General Engineering']
+TITLE: Semiconducting chalcogenide Ge-Se-Sb-Cu as new prospective thermoelectric materials // SUBJ.: ['General Physics and Astronomy']
+TITLE: Assessment and restoration of the first Greek power plant - Registered monument of industrial heritage // SUBJ.: ['Civil and Structural Engineering', 'Building and Construction']
+TITLE: Rapid fabrication of superhydrophobic high-silicon aluminum alloy surfaces with corrosion resistance // SUBJ.: ['General Physics and Astronomy']
+TITLE: Biosynthesis, characterization, and evaluation of bioactivities of leaf extract-mediated biocompatible gold nanoparticles from Alternanthera bettzickiana // SUBJ.: ['Biotechnology', 'Applied Microbiology and Biotechnology']
+TITLE: Damage detection using modal frequency curve and squared residual wavelet coefficients-based damage indicator // SUBJ.: ['Computer Science Applications', 'Signal Processing', 'Aerospace Engineering', 'Civil and Structural Engineering', 'Control and Systems Engineering', 'Mechanical Engineering']
+TITLE: Morphological study of TiO₂ thin films doped with cobalt by Metal Organic Chemical Vapor Deposition // SUBJ.: ['General Physics and Astronomy']
+TITLE: Microstructure and texture evolution of cold rolled 1070 Al alloy during the subsequent annealing treatment // SUBJ.: ['General Physics and Astronomy']
+TITLE: Ultra-slow growth rate: Accurate control of the thickness of porous anodic aluminum oxide films // SUBJ.: ['Electrochemistry']
+TITLE: Dynamic interaction of suspension-type monorail vehicle and bridge: Numerical simulation and experiment // SUBJ.: ['Computer Science Applications', 'Signal Processing', 'Aerospace Engineering', 'Civil and Structural Engineering', 'Control and Systems Engineering', 'Mechanical Engineering']
+TITLE: Sol gel graphene/TiO2 nanoparticles for the photocatalytic-assisted sensing and abatement of NO2 // SUBJ.: ['Catalysis', 'Process Chemistry and Technology', 'General Environmental Science']
+TITLE: Deterioration of cracks in onshore wind turbine foundations // SUBJ.: ['Civil and Structural Engineering']
+TITLE: Ion irradiation-induced foams in antimonide binary alloys: A combination of small energy bandgap with giant surface-to-bulk ratio // SUBJ.: ['General Energy']
+TITLE: Comparison of the biomechanical tensile and compressive properties of decellularised and natural porcine meniscus // SUBJ.: ['Biophysics', 'Biomedical Engineering', 'Orthopedics and Sports Medicine', 'Rehabilitation']
+correct predictions: 33/154
+
+None
+updated precision stats, incorporating cosine similarity:
+                 0        1       2
+precision     0.90     0.74    0.83
+recall        0.88     0.77    0.77
+f1-score      0.89     0.76    0.77
+support    3200.00  2000.00  800.00
+MCC           0.71      NaN     NaN
+
+tier-2 precision improvement: 4.55%

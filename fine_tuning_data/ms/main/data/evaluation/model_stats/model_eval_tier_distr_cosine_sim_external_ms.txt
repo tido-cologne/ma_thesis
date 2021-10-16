@@ -1,0 +1,74 @@
+model performance after fine-tuning:
+                 0        1       2
+precision     0.89     0.75    0.78
+recall        0.88     0.77    0.78
+f1-score      0.88     0.76    0.78
+support    3200.00  2000.00  800.00
+MCC           0.71      NaN     NaN
+
+predicted tier distribution:
+0    3135
+1    2066
+2     799
+Name: pred_label, dtype: int64
+prediction distribution:
+|        |   true_0 |   true_1 |   true_2 |
+|:-------|---------:|---------:|---------:|
+| pred_0 |     2801 |      298 |       36 |
+| pred_1 |      381 |     1548 |      137 |
+| pred_2 |       18 |      154 |      627 |
+
+
+right predictions according to cosine similarity (analyzing 18 articles...):
+
+TITLE: Heparin coatings for improving blood compatibility of medical devices // SUBJ.: ['Pharmaceutical Science']
+TITLE: A case study on failure of AISI 347H stabilized stainless steel pipe in a petrochemical plant // SUBJ.: ['Safety, Risk, Reliability and Quality']
+TITLE: Failure analysis of the mobile elevating work platform // SUBJ.: ['Safety, Risk, Reliability and Quality']
+correct predictions: 3/18
+
+
+right predictions according to cosine similarity (analyzing 154 articles...):
+
+TITLE: 171 Scandium-based full Heusler compounds: A comprehensive study of competition between XA and L21 atomic ordering // SUBJ.: ['General Physics and Astronomy']
+TITLE: Damage detection using modal frequency curve and squared residual wavelet coefficients-based damage indicator // SUBJ.: ['Computer Science Applications', 'Signal Processing', 'Aerospace Engineering', 'Civil and Structural Engineering', 'Control and Systems Engineering', 'Mechanical Engineering']
+TITLE: The correlation between superconductivity and ferromagnetism in superconductor-ferromagnet heterostructures // SUBJ.: ['General Physics and Astronomy']
+TITLE: Stress recovery from one dimensional models for tapered bi-symmetric thin-walled I beams: Deficiencies in modern engineering tools and procedures // SUBJ.: ['Civil and Structural Engineering', 'Mechanical Engineering', 'Building and Construction']
+TITLE: Microstructure evolution and hot extrusion behavior of AZ31-Nd magnesium alloy adopting AZ31 chips and Mg-Nd chips // SUBJ.: ['General Physics and Astronomy']
+TITLE: The underlying mechanisms of enhanced microwave absorption performance for the NiFe2O4-decorated Ti3C2Tx MXene // SUBJ.: ['General Physics and Astronomy']
+TITLE: Analysis of contaminated nuclear plant steel by laser-induced breakdown spectroscopy // SUBJ.: ['Environmental Chemistry', 'Environmental Engineering', 'Health, Toxicology and Mutagenesis', 'Pollution', 'Waste Management and Disposal']
+TITLE: Remaining fatigue life assessment of in-service road bridge decks based upon artificial neural networks // SUBJ.: ['Civil and Structural Engineering']
+TITLE: Glass transition temperature versus structure of polyamide 6: A flash-DSC study // SUBJ.: ['Physical and Theoretical Chemistry', 'Condensed Matter Physics', 'Instrumentation']
+TITLE: Deterioration of cracks in onshore wind turbine foundations // SUBJ.: ['Civil and Structural Engineering']
+TITLE: Morphological study of TiO₂ thin films doped with cobalt by Metal Organic Chemical Vapor Deposition // SUBJ.: ['General Physics and Astronomy']
+TITLE: Theoretical studies on a (FGPM) system with Gaussian profile for a zero TCD SAW devices // SUBJ.: ['General Physics and Astronomy']
+TITLE: Physical properties enhancement of porous silicon treated with In2O3 as a antireflective coating // SUBJ.: ['General Physics and Astronomy']
+TITLE:  Recycled photocatalyst and available photodetector based on ternary Bi 6 Mo 2 O 15 sub-microcrystals  // SUBJ.: ['General Physics and Astronomy']
+TITLE: Synthesis and characterisation of nickel oxide reinforced with polycaprolactone composite for dielectric applications by controlling nickel oxide as a filler // SUBJ.: ['General Physics and Astronomy']
+TITLE: Application of structural topology optimisation in aluminium cross-sectional design // SUBJ.: ['Civil and Structural Engineering', 'Mechanical Engineering', 'Building and Construction']
+TITLE: Time dependence of silica optical properties during the implantation of fast hydrogen ions: Theory // SUBJ.: ['Instrumentation', 'Nuclear and High Energy Physics']
+TITLE: Semiconducting chalcogenide Ge-Se-Sb-Cu as new prospective thermoelectric materials // SUBJ.: ['General Physics and Astronomy']
+TITLE: Controlled preparation of carbon nanotube-conducting polymer composites at the polarisable organic/water interface // SUBJ.: ['Electrochemistry']
+TITLE: Kinetics of cross-linking processes of fast-curing polyurethane system // SUBJ.: ['Physical and Theoretical Chemistry', 'Condensed Matter Physics', 'Instrumentation']
+TITLE: Effects of mixed-alkali oxides on AC conductivity and dielectric properties of xNa2O-(20-x)K2O-30V2O5-50TeO2 glasses // SUBJ.: ['General Physics and Astronomy']
+TITLE: Ion irradiation-induced foams in antimonide binary alloys: A combination of small energy bandgap with giant surface-to-bulk ratio // SUBJ.: ['General Energy']
+TITLE: Improve the catalytic property of La0.6Sr0.4Co0.2Fe0.8O3/Ce0.9Gd0.1O2 (LSCF/CGO) cathodes with CuO nanoparticles infiltration // SUBJ.: ['General Chemical Engineering', 'Electrochemistry']
+TITLE: The use of hydrogen to separate and recycle neodymium-iron-boron-type magnets from electronic waste // SUBJ.: ['Strategy and Management', 'Renewable Energy, Sustainability and the Environment', 'Industrial and Manufacturing Engineering', 'General Environmental Science']
+TITLE: Modelling the failure of reinforced concrete with nonlocal and crack band approaches using the damage-plasticity model CDPM2 // SUBJ.: ['Computer Graphics and Computer-Aided Design', 'General Engineering', 'Analysis', 'Applied Mathematics']
+TITLE: Bending angle prediction and control of soft pneumatic actuators with embedded flex sensors – A data-driven approach // SUBJ.: ['Computer Science Applications', 'Electrical and Electronic Engineering', 'Mechanical Engineering']
+TITLE: Atomised spray plasma deposition of hierarchical superhydrophobic nanocomposite surfaces // SUBJ.: ['Colloid and Surface Chemistry', 'Physical and Theoretical Chemistry', 'Surfaces and Interfaces']
+TITLE: Assessment and restoration of the first Greek power plant - Registered monument of industrial heritage // SUBJ.: ['Civil and Structural Engineering', 'Building and Construction']
+TITLE: Structural modification of nanohydroxyapatite Ca10(PO4)6(OH)2 related to Eu3+ and Sr2+ ions doping and its spectroscopic and antimicrobial properties // SUBJ.: ['Biochemistry', 'Inorganic Chemistry']
+TITLE: Non-associative limit analysis of the toppling-sliding failure of rock slopes // SUBJ.: ['Geotechnical Engineering and Engineering Geology']
+correct predictions: 30/154
+
+
+None
+updated precision stats, incorporating cosine similarity:
+                 0        1       2
+precision     0.89     0.75    0.83
+recall        0.88     0.77    0.78
+f1-score      0.88     0.76    0.78
+support    3200.00  2000.00  800.00
+MCC           0.71      NaN     NaN
+
+tier-2 precision improvement: 4.6%

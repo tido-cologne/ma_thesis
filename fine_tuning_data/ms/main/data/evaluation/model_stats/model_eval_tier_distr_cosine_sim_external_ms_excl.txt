@@ -1,0 +1,45 @@
+predicted tier distribution:
+0    1631
+1    1015
+2     354
+Name: pred_label, dtype: int64
+prediction distribution:
+|        |   true_0 |   true_1 |   true_2 |
+|:-------|---------:|---------:|---------:|
+| pred_0 |     1426 |      181 |       24 |
+| pred_1 |      164 |      741 |      110 |
+| pred_2 |       10 |       78 |      266 |
+
+
+right predictions according to cosine similarity (analyzing 10 articles...):
+
+TITLE: A simple flash sintering setup under applied mechanical stress and controlled atmosphere // SUBJ.: ['Clinical Biochemistry', 'Medical Laboratory Technology']
+TITLE: Electrospun collagen-based nanofibres: A sustainable material for improved antibiotic utilisation in tissue engineering applications // SUBJ.: ['Pharmaceutical Science']
+correct predictions: 2/10
+
+
+right predictions according to cosine similarity (analyzing 78 articles...):
+
+TITLE: Bio-inspired AlSiCN/Ti hierarchical coatings with high toughness by efficient energy dissipation // SUBJ.: ['General Physics and Astronomy']
+TITLE: Effect of an Fe(II)-modified trivalent chromium conversion process on Cr(VI) formation during coating of AA 2024 alloy // SUBJ.: ['Electrochemistry']
+TITLE: Micro grinding 16MnCr5 hardened steel using micro pencil grinding tools with diameters ∼50 μm // SUBJ.: ['Industrial and Manufacturing Engineering']
+TITLE: Lignin/poly(butylene succinate) composites with antioxidant and antibacterial properties for potential biomedical applications // SUBJ.: ['Biochemistry', 'Molecular Biology', 'Structural Biology', 'Economics and Econometrics', 'General Energy']
+TITLE: Liquid hydridosilane precursor prepared from cyclopentasilane via sonication at low temperatures without the action of light // SUBJ.: ['Chemical Engineering (miscellaneous)', 'Inorganic Chemistry', 'Organic Chemistry', 'Environmental Chemistry', 'Radiology, Nuclear Medicine and Imaging', 'Acoustics and Ultrasonics']
+TITLE: Effect of impurity antimony on the creep behavior of 2.25Cr-1Mo heat-resistant steel // SUBJ.: ['General Physics and Astronomy']
+TITLE: Structural and electrical transport properties of (La0.7-xYx)Ca0.3MnO3 manganites // SUBJ.: ['General Physics and Astronomy']
+TITLE: Theoretical design of a triple-band perfect metamaterial absorber in the THz frequency range // SUBJ.: ['General Physics and Astronomy']
+TITLE: Effect of tool pin side area ratio on temperature distribution in friction stir welding // SUBJ.: ['General Physics and Astronomy']
+TITLE: The effect of organoclay addition on the properties of an acrylate based, thermally activated shape memory polymer // SUBJ.: ['Geochemistry and Petrology', 'Geology']
+correct predictions: 10/78
+
+
+None
+updated precision stats, incorporating cosine similarity:
+                 0        1       2
+precision     0.87     0.73    0.79
+recall        0.89     0.74    0.66
+f1-score      0.88     0.74    0.71
+support    1600.00  1000.00  400.00
+MCC           0.68      NaN     NaN
+
+tier-2 precision improvement: 3.53%

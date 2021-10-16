@@ -1,0 +1,35 @@
+extracted terms: 10464
+no duplicates: 10236
+long enough: 7858
+sim over threshold: 7943
+concordance: 7368
+ref_corpus: 3012
+correct pos pattern: 4644
+pot plural: 375
+pot adjective: 47
+
+unigrams: 1668
+bigrams: 1344
+unique: 1798
+unigrams(unique): 731
+bigrams(unique): 1067
+
+manual processing:
+
+pot. wrong unique terms: 249
+  of which unigrams: 124
+    changed: 101
+    deleted: 22
+    kept: 1
+  of which bigrams: 125
+    changed: 93
+    deleted: 23
+    kept: 9
+
+terms kept after processing: 1703
+terms discarded after processing: 95
+  of which were deletions: 45
+  of which were mergers due to changes: 44
+
+
+

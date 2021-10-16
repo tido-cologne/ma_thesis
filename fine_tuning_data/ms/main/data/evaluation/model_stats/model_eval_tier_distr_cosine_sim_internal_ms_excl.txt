@@ -1,0 +1,47 @@
+predicted tier distribution:
+0    1614
+1     961
+2     425
+Name: pred_label, dtype: int64
+prediction distribution:
+|        |   true_0 |   true_1 |   true_2 |
+|:-------|---------:|---------:|---------:|
+| pred_0 |     1426 |      181 |        7 |
+| pred_1 |      164 |      741 |       56 |
+| pred_2 |       10 |       78 |      337 |
+
+right predictions according to cosine similarity (analyzing 10 articles...):
+
+TITLE: Electrospun collagen-based nanofibres: A sustainable material for improved antibiotic utilisation in tissue engineering applications // SUBJ.: ['Pharmaceutical Science']
+correct predictions: 1/10
+
+
+right predictions according to cosine similarity (analyzing 78 articles...):
+
+TITLE: Self-assembled liquid crystalline nanotemplates and their incorporation in dye-sensitised solar cells // SUBJ.: ['General Chemical Engineering', 'Electrochemistry']
+TITLE: Enhanced bondline thickness analysis for non-rigid airframe structural assemblies // SUBJ.: ['Aerospace Engineering']
+TITLE: Development of high temperature operation silicon based MOSFET for harsh environment application // SUBJ.: ['General Physics and Astronomy']
+TITLE: Liquid hydridosilane precursor prepared from cyclopentasilane via sonication at low temperatures without the action of light // SUBJ.: ['Chemical Engineering (miscellaneous)', 'Inorganic Chemistry', 'Organic Chemistry', 'Environmental Chemistry', 'Radiology, Nuclear Medicine and Imaging', 'Acoustics and Ultrasonics']
+TITLE: Effect of an Fe(II)-modified trivalent chromium conversion process on Cr(VI) formation during coating of AA 2024 alloy // SUBJ.: ['Electrochemistry']
+TITLE: Theoretical design of a triple-band perfect metamaterial absorber in the THz frequency range // SUBJ.: ['General Physics and Astronomy']
+TITLE: Monitoring neovascularization and integration of decellularized human scaffolds using photoacoustic imaging // SUBJ.: ['Radiology, Nuclear Medicine and Imaging', 'Atomic and Molecular Physics, and Optics']
+TITLE: Structural and electrical transport properties of (La0.7-xYx)Ca0.3MnO3 manganites // SUBJ.: ['General Physics and Astronomy']
+TITLE: Effect of impurity antimony on the creep behavior of 2.25Cr-1Mo heat-resistant steel // SUBJ.: ['General Physics and Astronomy']
+TITLE: Serum protein layers on parylene-C and silicon oxide: Effect on cell adhesion // SUBJ.: ['Biotechnology', 'Colloid and Surface Chemistry', 'Physical and Theoretical Chemistry', 'Surfaces and Interfaces']
+TITLE: Fabrication and simulation of organic transistors and functional circuits // SUBJ.: ['Physical and Theoretical Chemistry', 'General Physics and Astronomy']
+TITLE: Bio-inspired AlSiCN/Ti hierarchical coatings with high toughness by efficient energy dissipation // SUBJ.: ['General Physics and Astronomy']
+TITLE: Characterization of LuGdVO3 mixed crystal prepared by one new method // SUBJ.: ['General Physics and Astronomy']
+TITLE:  Ab initio study of rhombohedral ErMnO 3 as a high Tc half-metal with multiple Dirac cones and promising applications in spintronics  // SUBJ.: ['General Physics and Astronomy']
+TITLE: The effect of organoclay addition on the properties of an acrylate based, thermally activated shape memory polymer // SUBJ.: ['Geochemistry and Petrology', 'Geology']
+correct predictions: 15/78
+
+None
+updated precision stats, incorporating cosine similarity:
+                 0        1       2
+precision     0.88     0.77    0.83
+recall        0.89     0.74    0.84
+f1-score      0.89     0.76    0.82
+support    1600.00  1000.00  400.00
+MCC           0.72      NaN     NaN
+
+tier-2 precision improvement: 4.06%
